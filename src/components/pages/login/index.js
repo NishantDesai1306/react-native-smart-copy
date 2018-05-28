@@ -25,7 +25,6 @@ import {
 import { REDUX_FORM_KEYS } from '../../../services/constant.service';
 import { login, validateEmail } from '../../../services/auth.service';
 import { getUserDetails } from '../../../services/user.service';
-import { userLoggedOut } from '../../../actions/user.actions';
 import { THEME } from '../../../theme';
 import renderInput from '../../shared/input';
 
@@ -87,6 +86,9 @@ class LoginComponent extends React.Component {
       if (reason) {
         const text = reason.message || reason;
         ToastAndroid.show(text, ToastAndroid.SHORT);
+        this.setState({
+          loggingIn: false
+        });
       } else {
         this.navigateTo('Dashboard');
       }
@@ -94,6 +96,9 @@ class LoginComponent extends React.Component {
     .catch((err) => {
       const text = err.message || err;
       ToastAndroid.show(text, ToastAndroid.SHORT);
+      this.setState({
+        loggingIn: false
+      });
     });
   }
 
