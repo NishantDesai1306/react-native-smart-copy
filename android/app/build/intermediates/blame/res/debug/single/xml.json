@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\Projects\\react-native-smart-copy\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "E:\\Projects\\react-native-smart-copy\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.54.0\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "E:\\Projects\\react-native-smart-copy\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\provider_paths.xml",
+        "source": "E:\\Projects\\react-native-smart-copy\\android\\app\\build\\intermediates\\exploded-aar\\smartcopy\\react-native-image-picker\\unspecified\\res\\xml\\provider_paths.xml"
+    }
+]
